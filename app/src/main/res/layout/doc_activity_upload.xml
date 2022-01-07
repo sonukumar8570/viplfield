@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".docs.unregistered.UploadActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".UploadActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="4sp">
+
+            <TextView
+                style="@style/textViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Photo : **" />
+
+            <ImageView
+                android:id="@+id/photoIv"
+                android:layout_width="360dp"
+                android:layout_height="270sp"
+                android:layout_weight="1"
+                android:onClick="clickImage"
+                android:src="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="4sp">
+
+            <TextView
+                style="@style/textViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Aadhaar Card Front: " />
+
+            <ImageView
+                android:id="@+id/aadharIv"
+                android:layout_width="360dp"
+                android:layout_height="270sp"
+                android:layout_weight="1"
+                android:onClick="clickImage"
+                android:src="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="4sp">
+
+            <TextView
+                style="@style/textViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Aadhaar Card back: " />
+
+            <ImageView
+                android:id="@+id/otherIv"
+                android:layout_width="360dp"
+                android:layout_height="270dp"
+                android:layout_weight="1"
+                android:onClick="clickImage"
+                android:src="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="4sp">
+
+            <TextView
+                style="@style/textViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bank Pass Book : " />
+
+            <ImageView
+                android:id="@+id/bankIV"
+                android:layout_width="360dp"
+                android:layout_height="270dp"
+                android:layout_weight="1"
+                android:onClick="clickImage"
+                android:src="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="4sp">
+
+            <TextView
+                style="@style/textViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pan Card : " />
+
+            <ImageView
+                android:id="@+id/panIv"
+                android:layout_width="360dp"
+                android:layout_height="270dp"
+                android:layout_weight="1"
+                android:onClick="clickImage"
+                android:src="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="4sp">
+
+            <TextView
+                style="@style/textViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Voter Id Card : " />
+
+            <ImageView
+                android:id="@+id/voterIv"
+                android:layout_width="360dp"
+                android:layout_height="270dp"
+                android:layout_weight="1"
+                android:onClick="clickImage"
+                android:src="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="4sp">
+
+            <TextView
+                style="@style/textViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Passport: " />
+
+            <ImageView
+                android:id="@+id/passportIv"
+                android:layout_width="360dp"
+                android:layout_height="270dp"
+                android:layout_weight="1"
+                android:onClick="clickImage"
+                android:src="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/uploadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_background"
+            android:ems="18"
+            android:onClick="update"
+            android:text="Upload"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

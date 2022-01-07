@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.visibleinfotech.viplfieldapplications">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_survey"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_survey"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".SonuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sonu" />
+        <activity android:name=".LogActivity" />
+        <activity android:name=".plot_end.PlotEndActivity" />
+        <activity android:name=".profileUpdate.ProfileUpdateActivity" />
+        <activity android:name=".bill_entry.BillEntry" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".docs.ChoiceActivity" />
+        <activity android:name=".docs.UploadActivity" />
+        <activity android:name=".docs.unregistered.UploadActivity" />
+        <activity android:name=".docs.unregistered.MainActivity" />
+        <activity
+            android:name=".docs.ImageActivty"
+            android:label="Vipl Document Upload" />
+        <activity
+            android:name=".docs.MainActivity"
+            android:label="Vipl Document Upload" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".attendance.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".attendance.DieselActivity"
+            android:label="Vipl Diesel Mgmt." />
+        <activity
+            android:name=".attendance.HomeActivity"
+            android:label="Vipl Attendance" />
+        <activity
+            android:name=".attendance.HistoryActivity"
+            android:label="Attendance History" />
+
+        <service
+            android:name=".attendance.TrackingService"
+            android:exported="false" />
+
+        <activity
+            android:name=".field_planning.UploadActivity"
+            android:label="Field Planning" />
+        <activity
+            android:name=".field_planning.PlotMapsActivity"
+            android:label="PLot on Map" />
+        <activity
+            android:name=".field_planning.MainActivity"
+            android:label="Vipl Field Planning" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".attendance.MainActivity"
+            android:label="Vipl Attendance" />
+        <activity
+            android:name=".field_survey.survey.fragments.ShowMapActivity"
+            android:label="@string/title_activity_show_map" />
+        <activity android:name=".field_survey.AdminActivity" />
+        <activity
+            android:name=".field_survey.AdvanceSetting"
+            android:label="Selection Setting" />
+        <activity
+            android:name=".field_survey.survey.ShowSurvey"
+            android:label="Survey List"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".field_survey.survey.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".field_survey.survey.CreatePlotActivity"
+            android:label="Create Plot"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".field_survey.survey.ImportActivity"
+            android:label="Import from Server"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".field_survey.survey.SurveyActivity"
+            android:label="Complete the survey"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".field_survey.survey.HomeActivty"
+            android:label="Vipl Survey"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".field_survey.zone_detail.ZoneListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".field_slip.MainActivity"
+            android:label="Field Slip"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".field_slip.MapsActivity"
+            android:label="Field Map"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".field_slip.PrintActitvity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".brics.MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

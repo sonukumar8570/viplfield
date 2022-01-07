@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8sp"
+    tools:context=".bill_entry.BillEntry">
+
+    <TextView
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:padding="0sp"
+        android:text="Date"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/fromDateTv"
+        style="@style/editTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="calender" />
+
+    <TextView
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:padding="0sp"
+        android:text="Day Book "
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/dayBookSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:padding="0sp"
+        android:text="Village(Debit)"
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/vilageDebitET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="serif"
+        android:textSize="14sp" />
+
+    <TextView
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:padding="0sp"
+        android:text="Party(Debit)"
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/partyDebitET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="serif"
+        android:textSize="14sp" />
+
+    <TextView
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:padding="0sp"
+        android:text="Village(Credit) "
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/villageCreditEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="serif"
+        android:textSize="14sp" />
+
+    <TextView
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:padding="0sp"
+        android:text="Party(Credit) "
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/partyCreditEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="serif"
+        android:textSize="14sp" />
+
+    <TextView
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:padding="0sp"
+        android:text="Remark  "
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/remarkEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="serif"
+        android:textSize="14sp" />
+
+    <TextView
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:padding="0sp"
+        android:text="Service Name"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/serviceSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0sp"
+            android:text="Rate : "
+            android:textSize="12sp" />
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0sp"
+            android:text="Area : "
+            android:textSize="12sp" />
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0sp"
+            android:text="Hour : "
+            android:textSize="12sp" />
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0sp"
+            android:text="Min "
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/rateET"
+            style="@style/editTextStyle"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/areaEt"
+            style="@style/editTextStyle"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/hourEt"
+            style="@style/editTextStyle"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textSize="12sp" />
+
+
+        <EditText
+            android:id="@+id/minEt"
+            style="@style/editTextStyle"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/amountTv"
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4sp"
+        android:background="@drawable/solid_background"
+        android:onClick="calculateAmount"
+        android:text="Calculate Amount : "
+        android:textColor="#FFF"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0sp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8sp"
+            android:layout_weight="1"
+            android:background="@drawable/solid_background"
+            android:onClick="clearAll"
+            android:padding="8sp"
+            android:text="Clear"
+            android:textColor="#FFFFFF" />
+
+
+        <Button
+            android:layout_width="0sp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8sp"
+            android:layout_weight="1"
+            android:background="@drawable/solid_background"
+            android:onClick="save"
+            android:padding="8sp"
+            android:text="Save"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>

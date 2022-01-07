@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <ImageView
+        android:id="@+id/eee"
+        android:layout_width="match_parent"
+        android:layout_height="180sp"
+        android:background="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eee"
+        android:gravity="center"
+        android:onClick="registered"
+        android:orientation="vertical"
+        android:padding="12sp">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/registered" />
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registered"
+            android:textColor="#009688" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:gravity="center"
+        android:onClick="unregistered"
+        android:orientation="vertical"
+        android:padding="12sp">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/unregistered" />
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unregistered"
+            android:textColor="#F44336" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main"
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12sp"
+        android:gravity="center"
+        android:onClick="aboutUs"
+        android:text="@string/main"
+        android:textColor="#E0BB8D" />
+</RelativeLayout>

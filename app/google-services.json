@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "234918237019",
+    "project_id": "vipl-field-applications",
+    "storage_bucket": "vipl-field-applications.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234918237019:android:26b8fe4c413a43e11b007e",
+        "android_client_info": {
+          "package_name": "in.visibleinfotech.viplfieldapplications"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234918237019-12cupv9gihs5o8ka3c1ckl2imuio551n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFamyXXEkZfMBPWJJIuFS5XeVGs7O7CqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234918237019-12cupv9gihs5o8ka3c1ckl2imuio551n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

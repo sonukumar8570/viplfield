@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+
+    android:paddingBottom="8sp"
+    tools:context=".field_survey.AdvanceSetting">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="16sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8sp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Option"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Reg PL"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Survey"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/irrigationSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Irrigation Type"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/irrigationGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/irrioption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/irrioption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/soilSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Soil Tested"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/soilGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/soiloption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/soiloption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/waterTestedSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Water Tested"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/waterTestedGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/waterTestedoption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/waterTestedoption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/waterSourceSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Water Source"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/waterSourceGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/waterSourceoption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/waterSourceoption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/nearestRoadSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Nearest Road"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/roadDistanceSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Distance from Road"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/roadDistanceGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/roadDistanceoption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/roadDistanceoption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/waterTypeSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Water Type"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/waterTypeGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/waterTypeoption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/waterTypeoption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/supplySwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Mode of Supply"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/supplyGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/supplyoption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/supplyoption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/fieldSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Field Type"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/fieldGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/fieldoption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/fieldoption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/elevationSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Field Elevation"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/elevationGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/elevationoption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/elevationoption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/soilTypeSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Soil Type"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/soilTypeGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/soilTypeoption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/soilTypeoption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/rorSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Row to Row Distance"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/rorGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rowoption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/rowoption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/harvSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Harvesting Type"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/harvGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/harvoption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/harvoption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/tressSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Tress Malching"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/tressGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/tressoption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/tressoption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/caneSeedSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Cane Seed"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/seedGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/seedoption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/seedoption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/interCropSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Inter Crop"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/interGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/interoption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/interoption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/prevCropSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Previous Crop"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/prevGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/prevoption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/prevoption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/dev1Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Cane Development Op 1"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/dev1Group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/dev1option1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/dev1option2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/dev2Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Cane Development Op 2"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/dev2Group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/dev2option1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/dev2option2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/dev3Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Cane Development Op 3"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/dev3Group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/dev3option1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/dev3option2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/dev4Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Cane Development Op 4"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/dev4Group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/dev4option1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/dev4option2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginRight="8sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/linear"
+                android:orientation="horizontal"
+                >
+
+                <Switch
+                    android:id="@+id/dev5Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_weight="1"
+                    android:text="Cane Development Op 5"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/dev5Group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/dev5soption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+
+                    <RadioButton
+                        android:id="@+id/dev5option2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="8sp">
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:padding="0sp"
+        android:text="Log In : "
+        android:textColor="#1F1F47" />
+
+
+    <TextView
+        android:id="@+id/a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="serif"
+        android:text="Log Out : "
+        android:textColor="#1F1F47" />
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="No Record"
+        android:textColor="#DA9022"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a2"
+        android:layout_alignParentEnd="true"
+        android:ems="8"
+        android:fontFamily="serif"
+        android:gravity="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="No Record"
+        android:textColor="#DA9022"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>

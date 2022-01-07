@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    android:orientation="vertical"
+    tools:context=".brics.MainActivity"
+    tools:ignore="HardcodedText">
+
+
+    <ScrollView
+        android:id="@+id/sbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background"
+            android:orientation="vertical"
+            android:padding="8sp">
+
+            <TextView
+                android:id="@+id/mylabelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#2A145C" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textViewStyle"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.74"
+                    android:padding="0sp"
+                    android:text="Plot No. : "
+                    android:textColor="#2A145C" />
+
+                <EditText
+                    android:id="@+id/tagTv"
+                    style="@style/editTextStyle"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textColorHint="#ccc"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/solid_background"
+                    android:onClick="searchPlot"
+                    android:text="Search"
+                    android:textColor="#FFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textViewStyle"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0sp"
+                    android:text="Name : "
+                    android:textColor="#2A145C" />
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    style="@style/editTextStyle"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight="4"
+                    android:background="@drawable/button_background"
+                    android:maxLines="1"
+                    android:padding="8sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textViewStyle"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0sp"
+                    android:text="Village : "
+                    android:textColor="#2A145C" />
+
+                <TextView
+                    android:id="@+id/codeTv"
+                    style="@style/editTextStyle"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight="4"
+                    android:background="@drawable/button_background"
+                    android:padding="8sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/varietyTv"
+                    style="@style/editTextStyle"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:padding="8sp"
+                    android:textColor="#2A145C"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/typeTv"
+                    style="@style/editTextStyle"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:padding="8sp"
+                    android:textColor="#2A145C"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/areaTv"
+                    style="@style/editTextStyle"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:padding="8sp"
+                    android:textColor="#2A145C"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/remainingTonsTv"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp"
+                android:background="@drawable/button_background"
+                android:padding="8sp"
+                android:text="Remaining Tons"
+                android:textColor="#2A145C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/resultTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFC107" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textViewStyle"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0sp"
+                    android:text="Plot Name: "
+                    android:textColor="#2A145C" />
+
+                <EditText
+                    android:id="@+id/landNameTv"
+                    style="@style/editTextStyle"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight="3"
+                    android:padding="8sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/textViewStyle"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0sp"
+                    android:text="Brix : "
+                    android:textColor="#2A145C" />
+
+                <EditText
+                    android:id="@+id/bricsCount"
+                    style="@style/editTextStyle"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColorHint="#ccc"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24sp"
+                android:layout_marginTop="12sp"
+                android:layout_marginRight="24sp"
+                android:background="@android:color/holo_orange_dark"
+                android:fontFamily="serif"
+                android:onClick="showLocation"
+                android:text="Update"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="400sp"
+                android:layout_margin="8sp" />
+
+
+            <Button
+                android:id="@+id/goToMapActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8sp"
+                android:background="@drawable/solid_background"
+                android:paddingStart="16sp"
+                android:paddingEnd="16sp"
+                android:text="Set Coordinates"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

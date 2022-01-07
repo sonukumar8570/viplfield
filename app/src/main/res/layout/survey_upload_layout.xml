@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/f2"
+        style="@style/editTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8sp"
+        android:fontFamily="serif-monospace"
+        android:padding="0sp"
+        android:text="You have successfully uploaded this surveys"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/verifyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/f2"
+        android:layout_alignParentEnd="true"
+        android:text="Verify" />
+
+    <ListView
+        android:id="@+id/surveyListUploaded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verifyBtn"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="1sp" />
+
+    <TextView
+        android:id="@+id/uploArTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:padding="8sp"
+        android:textColor="@color/colorPrimary" />
+</RelativeLayout>

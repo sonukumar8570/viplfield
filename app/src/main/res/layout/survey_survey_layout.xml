@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/plotID3"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/farmerName3"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.6"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/plotName3"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:fontFamily="serif-monospace"
+        android:textColor="#000" />
+
+
+    <TextView
+        android:id="@+id/canevariety3"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:fontFamily="serif-monospace"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/cropType3"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/plotArea3"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/plDate"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/colorPrimary" />
+
+</LinearLayout>

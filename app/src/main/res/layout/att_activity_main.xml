@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    android:padding="16sp"
+    tools:context=".attendance.MainActivity">
+
+
+    <TextView
+        android:id="@+id/rew"
+        style="@style/textViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4sp"
+        android:background="@drawable/hollow_background"
+        android:text="Login Status" />
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="230sp"
+        android:layout_height="300sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8sp"
+        android:background="@drawable/hollow_background"
+        android:onClick="captureImage"
+        android:padding="16sp"
+        android:src="@android:drawable/ic_menu_camera" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/solid_background"
+        android:fontFamily="serif"
+        android:onClick="submit"
+        android:text="Log In"
+        android:textColor="#FFF" />
+
+    <TextView
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8sp"
+        android:background="@drawable/button_background"
+        android:onClick="record"
+        android:text="Record History"
+        android:textColor="@color/colorPrimary" />
+</LinearLayout>

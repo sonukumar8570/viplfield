@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Vipl Field Applications</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="attendance">User Attendance</string>
+    <string name="survey">Field Survey</string>
+    <string name="doc">KYC</string>
+    <string name="schedule">Field Schedule</string>
+    <string name="store">Store</string>
+
+
+    <string name="main"><u>Visible Infotech Pvt. Ltd.</u></string>
+    <string name="title_activity_maps">maps</string>
+    <string name="title_activity_show_map">Show Map</string>
+    <string name="title_activity_akjd">Map</string>
+    <string name="menu_home">Home</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="bill">Bill Entry</string>
+
+    <string name="help">सर्वे शुरू करने से पहले इन सभी बातों का विशेष ध्यान रखें। ताकि आपकी सर्वे सही और बिना किसी रुकावट के पूरी हो सके।\n
+1. मोबाइल की लोकेशन चालू करें। और हो सके तो मोबाइल को फ्लाइट मोड में कर दे ताकि कॉल के कारण आपका सर्वे बाधित ना हो।\n
+2. सबसे पहले किसान का प्लॉट बनाए।\n
+3. उसके बाद स्टार्ट सर्वे में जाकर किसान के फसल संबंधी जानकारी डाले। और उसके अनुमति प्लॉट की एरिया डाले।\n
+4. सर्वे एप्लीकेशन में दिए गए रीसेट बटन से अपनी लोकेशन को रीसेट करे।\n
+5. सर्वे शुरू करने के लिए दिए गए next बटन को क्लिक करे और 8 से 10 कदम की दूरी पर फिर से next बटन दबा कर चेक कर ले की मैप पर दिखाई जा रही लाइन आपके द्वारा तय की गई दूरी के बराबर है।\n
+6. एक बार फिर रीसेट बटन से अपना लोकेशन रीसेट करके सर्वे शुरू करे।\n
+7. सही और सटीक सर्वे के लिए जितनी ज्यादा कॉर्डिनेट्स ले सकते है ले ताकि आपके प्लॉट की कोई एरिया छूट ना जाए।\n
+8. आखिरी कॉर्डिनेट जहा से सर्वे शुरू  किया था वहा से कुछ दूर पहले ले। फिर आपको प्लॉट के आकार का मैप आपके मोबाइल स्क्रीन पर दिख जाएगा।\n
+9. सर्वे समाप्त करने के लिए Done बटन क्लिक करें।\n
+10. अपने सर्वे की डिटेल चेक करने के लिए एप्लीकेशन में दिए गाए शो सुर्वे  में जाए वहा आपके द्वारा बनाए गए प्लॉट सुर्वे किए हुए प्लॉट और सर्वे अपलोड किए हुए इन सब की जानकारी दिख जाएगी।\n
+11. सर्वे को अपलोड करने के लिए एप्लीकेशन में दिखाए गए एक्सपोर्ट बटन को क्लिक करें।\n
+12. अब आपके द्वारा किए गए सारे सर्वे कंप्लीट से अपलोड में ट्रांसफर हो जाएगा। आप इसकी रिपोर्ट सिस्टम सॉफ्टवेयर में भी देख पाएंगे।\n
+इन सभी बातों का विशेष ध्यान रखते हुए सर्वे को कंप्लीट करे।\n
+
+धन्यवाद।\n
+Visible infotech Pvt Ltd</string>
+    <string name="update">Update Info</string>
+    <string name="title_activity_sonu">SonuActivity</string>
+
+</resources>

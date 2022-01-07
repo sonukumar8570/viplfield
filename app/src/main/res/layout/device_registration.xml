@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@mipmap/ic_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="16sp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:maxLines="1"
+            android:text="Company Unique Code"
+            android:textColor="#0C327E" />
+
+        <EditText
+            android:id="@+id/companySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0C327E"
+            android:textColor="#0C327E"
+            android:textColorHint="#7A0C327E" />
+
+        <TextView
+            android:id="@+id/companyNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0C327E" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:maxLines="1"
+            android:text="Company Mobile Number"
+            android:textColor="#0C327E" />
+
+        <EditText
+            android:id="@+id/mobileEtr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0C327E"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="#0C327E"
+            android:textColorHint="#7A0C327E" />
+
+        <TextView
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0C327E" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:text="Wait for Otp"
+            android:textColor="#0C327E" />
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/idEdtOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0C327E"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="#0C327E"
+            android:textColorHint="#7A0C327E"  />
+
+
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:background="@drawable/solid_background"
+            android:text="Register"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+</LinearLayout>

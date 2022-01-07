@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180sp"
+        android:background="@drawable/logo" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="3">
+
+
+        <TextView
+            android:id="@+id/survey"
+            style="@style/textViewStyle"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8sp"
+            android:background="@drawable/hollow_background"
+            android:drawableLeft="@mipmap/ic_survey"
+            android:gravity="center_vertical"
+            android:padding="8sp"
+            android:text="Field Survey" />
+
+        <TextView
+            android:id="@+id/attendance"
+            style="@style/textViewStyle"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8sp"
+            android:background="@drawable/hollow_background"
+            android:drawableLeft="@mipmap/ic_meri_hazri"
+            android:gravity="center_vertical"
+            android:padding="8sp"
+            android:text="User Attendance" />
+
+        <TextView
+            android:id="@+id/document"
+            style="@style/textViewStyle"
+            android:layout_width="0sp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8sp"
+            android:background="@drawable/hollow_background"
+            android:drawableStart="@mipmap/ic_ftp"
+            android:gravity="center_vertical"
+            android:padding="8sp"
+            android:text="Document Uploader" />
+
+        <TextView
+            android:id="@+id/planning"
+            style="@style/textViewStyle"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8sp"
+            android:background="@drawable/hollow_background"
+            android:drawableStart="@mipmap/ic_schedule"
+            android:gravity="center_vertical"
+            android:padding="8sp"
+            android:text="Field Schedule and Planning" />
+
+    </GridLayout>
+</LinearLayout>

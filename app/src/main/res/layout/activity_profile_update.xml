@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hollow_background"
+    tools:context=".profileUpdate.ProfileUpdateActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@mipmap/ic_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:layout_margin="12sp"
+        android:background="@drawable/hollow_background"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0sp"
+            android:text="Type Village Code or Name" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/p_villageEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:maxLines="1"
+            android:padding="8sp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:padding="0sp"
+            android:text="Farmer name or code here" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/p_profileNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:maxLines="1"
+            android:padding="8sp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:padding="0sp"
+            android:text="Mobile Number Update" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/p_mobileEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="8sp"
+            android:enabled="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:padding="0sp"
+            android:text="Aadhar Number Update" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/p_aadharEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:inputType="number"
+            android:maxLength="16"
+            android:enabled="false"
+            android:maxLines="1"
+            android:padding="8sp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:background="@drawable/solid_background"
+            android:onClick="saveUpdate"
+            android:text="Save Update"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lmn"
+    tools:context=".field_survey.harvester.HarvesterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16sp">
+
+        <AutoCompleteTextView
+            android:id="@+id/farmerHarvActv"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter farmer name" />
+
+        <TextView
+            android:id="@+id/farmerDetailTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Farmer Detail"
+            android:textColor="#fff" />
+
+        <Spinner
+            android:id="@+id/farmerLandSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp" />
+
+        <TextView
+            android:id="@+id/plotAreaTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plot Area : "
+            android:textColor="#fff" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cropTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crop Type : "
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/varietyNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Variety Name : "
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/harvesterNameEt"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:hint="Enter harvester name" />
+
+        <AutoCompleteTextView
+            android:id="@+id/transporterNameEt"
+            style="@style/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:hint="Enter transporter name" />
+
+        <Spinner
+            android:id="@+id/mOTSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lmn"
+            android:onClick="validateAndPreview"
+            android:text="Validate / Preview "
+            android:textColor="#fff" />
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map2"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="400sp"
+            android:layout_marginTop="8sp"
+            tools:context=".MapsActivity" />
+
+
+    </LinearLayout>
+</ScrollView>

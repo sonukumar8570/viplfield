@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".attendance.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8sp">
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/main"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:background="@drawable/hollow_background"
+            android:orientation="vertical"
+            android:padding="8sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Server Name or Ip"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/ipET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="8sp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Database name"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/dbNAmeET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="8sp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/dbuserET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="8sp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/dbpassET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="8sp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Site Code"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/villageCodeET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="8sp"
+                android:textSize="12sp" />
+
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Enable Tracking Service"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ftp Server"
+                android:textColor="@color/colorPrimary" />
+
+
+            <EditText
+                android:id="@+id/ftpServerEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="8sp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ftp Path"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/ftpEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="8sp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ftp Username"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/ftpUserET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="8sp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ftp Password"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/ftpPasswordET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="8sp"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:id="@+id/isCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instace in server name"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/instanceET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="8sp"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/wrap"
+                style="@style/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                android:background="@drawable/solid_background"
+                android:ems="7"
+                android:onClick="settings"
+                android:text="Save" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

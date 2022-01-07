@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16sp"
+    tools:context=".field_survey.survey.HomeActivty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/editTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:text="Visible Infotech Pvt. Ltd."
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/login_title3"
+            style="@style/editTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8sp"
+            android:text="Season"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_action_not_connected" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:onClick="showHelp"
+            android:text="Help"
+            android:drawablePadding="8sp"
+            android:textColor="@color/colorPrimary"
+            android:drawableEnd="@drawable/ic_help" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:layout_weight="1"
+            android:background="@drawable/hollow_background"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="exportData"
+            android:layout_margin="4sp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                style="@style/textViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Export"
+               />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:src="@drawable/export" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="importData"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:background="@drawable/hollow_background"
+            android:layout_margin="4sp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Import"
+                style="@style/textViewStyle"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:src="@drawable/ic_action_import" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:onClick="createPlot"
+            android:orientation="vertical"
+            android:background="@drawable/hollow_background"
+            android:weightSum="4"
+            android:layout_margin="4sp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Register Plot"
+                style="@style/textViewStyle"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:src="@drawable/create" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:onClick="startSurvey"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:layout_margin="4sp"
+            android:background="@drawable/hollow_background">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Start Survey"
+                style="@style/textViewStyle"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:src="@drawable/start" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="showSurvey"
+            android:orientation="vertical"
+            android:background="@drawable/hollow_background"
+            android:layout_margin="4sp"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Show Survey"
+                style="@style/textViewStyle"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:src="@drawable/show" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
